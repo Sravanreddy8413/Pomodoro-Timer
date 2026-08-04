@@ -1,0 +1,102 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* CSS Variables for colors & styling */
+:root {
+    --bg-color: #f4f6f9;
+    --card-bg: #ffffff;
+    --primary-color: #e74c3c;
+    --text-color: #2c3e50;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Google Font applied globally */
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+
+    /* Flexbox used to center content on the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card layout container */
+.container {
+    background-color: var(--card-bg);
+    padding: 30px;
+    
+    /* Border Radius & Box Shadow */
+    border-radius: 16px;
+    box-shadow: 0 10px 25px var(--shadow-color);
+    
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* Timer Display */
+#time-display {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 20px 0;
+    color: var(--primary-color);
+}
+
+/* Button Styling with Hover Effect */
+.btn {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    
+    /* Smooth transition for Hover Effect */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+}
+
+/* Hover Effect */
+.btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Responsive Layout */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    #time-display {
+        font-size: 3rem;
+    }
+
+    .controls {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
