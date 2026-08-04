@@ -6,103 +6,12 @@
     <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-    <div class="container">
-        <!-- Title -->
-        <header>
-            <h1>Pomodoro Timer</h1>
-        </header>
-
-        <main>
-            <!-- Current Session -->
-            <section class="session-type" aria-live="polite">
-                <span id="session-label">Work Session</span>
-            </section>
-
-            <!-- Timer Display -->
-            <section class="timer-display">
-                <div id="time-display" role="timer" aria-label="Time remaining">25:00</div>
-            </section>
-
-            <!-- Buttons -->
-            <section class="controls">
-                <button id="start-btn" class="btn">Start</button>
-                <button id="pause-btn" class="btn" disabled>Pause</button>
-                <button id="reset-btn" class="btn">Reset</button>
-            </section>
-
-            <!-- Completed Sessions -->
-            <section class="session-tracker">
-                <p>Completed Work Sessions: <span id="completed-count">0</span></p>
-            </section>
-
-            <!-- Settings -->
-            <section class="settings">
-                <h2>Settings (Minutes)</h2>
-                <form id="settings-form">
-                    <div class="setting-group">
-                        <label for="work-time">Work</label>
-                        <input type="number" id="work-time" name="workTime" value="25" min="1" max="60">
-                    </div>
-                    <div class="setting-group">
-                        <label for="short-break">Short Break</label>
-                        <input type="number" id="short-break" name="shortBreak" value="5" min="1" max="30">
-                    </div>
-                    <div class="setting-group">
-                        <label for="long-break">Long Break</label>
-                        <input type="number" id="long-break" name="longBreak" value="15" min="1" max="45">
-                    </div>
-                    <button type="submit" id="save-settings-btn" class="btn">Save Settings</button>
-                </form>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2026 Pomodoro App. Built for focus and productivity.</p>
-        </footer>
-    </div>
-
-    <!-- Alarm Audio -->
-    <audio id="alarm-sound" src="assets/alarm.mp3" preload="auto"></audio>
-
-    <!-- JavaScript Modules -->
-    <script src="js/timer.js"></script>
-    <script src="js/ui.js"></script>
-    <script src="js/storage.js"></script>
-    <script src="js/audio.js"></script>
-    <script src="script.js"></script>
-</body>
-</html> 
-
-<section class="settings">
-    <h2>Settings (Minutes)</h2>
-    <form id="settings-form">
-        <div class="setting-group">
-            <label for="work-time">Work</label>
-            <input type="number" id="work-time" name="workTime" value="25" min="1" max="60" required>
-        </div>
-        <div class="setting-group">
-            <label for="short-break">Short Break</label>
-            <input type="number" id="short-break" name="shortBreak" value="5" min="1" max="30" required>
-        </div>
-        <div class="setting-group">
-            <label for="long-break">Long Break</label>
-            <input type="number" id="long-break" name="longBreak" value="15" min="1" max="45" required>
-        </div>
-        <button type="submit" id="save-settings-btn" class="btn">Save Settings</button>
-    </form>
-</section> 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pomodoro Timer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Vercel Web Analytics -->
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -165,4 +74,4 @@
     <script src="js/timer.js"></script>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
